@@ -1,0 +1,45 @@
+{
+  "name": "ts-node-clean-architecture-api-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon",
+    "start": "node index.js",
+    "test": "NODE_ENV=test jest",
+    "coverage": "jest --coverage"
+  },
+  "author": "",
+  "license": "MIT",
+  "jest": {
+    "collectCoverageFrom": [
+      "**/*.{js}",
+      "!**/node_modules/**",
+      "!**/vendor/**",
+      "!**/coverage/**"
+    ],
+    "testURL": "http://localhost/"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "nodemon": "^3.0.2",
+    "sqlite3": "^5.1.7"
+  },
+  "dependencies": {
+    "@hapi/boom": "^10.0.1",
+    "@hapi/good": "^9.0.1",
+    "@hapi/good-console": "^9.0.1",
+    "@hapi/good-squeeze": "^6.0.0",
+    "@hapi/hapi": "^21.3.2",
+    "@hapi/inert": "^7.1.0",
+    "@hapi/vision": "^7.0.3",
+    "blipp": "^4.0.2",
+    "dotenv": "^16.3.1",
+    "hapi-swagger": "^17.2.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.0.4",
+    "request": "^2.88.2",
+    "require-directory": "^2.1.1",
+    "sequelize": "^6.35.2"
+  }
+}
